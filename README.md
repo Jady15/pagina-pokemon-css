@@ -50,17 +50,6 @@
    ```
 2. Abre el archivo `index.html` en tu navegador web preferido.
 
----
-
-## **Capturas de Pantalla**
-
-### Vista General
-![Vista General de la Pokedex](https://via.placeholder.com/800x400.png?text=Pokedex+Básica)
-
-### Hover en Pokémon
-![Hover en Pokémon](https://via.placeholder.com/800x400.png?text=Hover+en+Pokémon)
-
----
 
 ## **Próximas Mejoras**
 
