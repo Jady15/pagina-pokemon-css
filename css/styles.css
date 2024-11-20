@@ -1,0 +1,92 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f8ff; /* Alice Blue */
+}
+
+/* Header */
+#main-header {
+    background-color: #ff4500; /* Orange Red */
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.title {
+    margin: 0;
+}
+
+/* Pokedex */
+.pokedex {
+    display: block;
+    padding: 1em;
+}
+
+.pokemon {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em 0;
+    transition: transform 0.3s;
+}
+
+.pokemon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del nombre del Pokémon */
+.pokemon-name {
+    display: block;
+    font-size: 1.5em;
+    color: #333333; /* Gris oscuro */
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+/* Tipos */
+.type {
+    display: inline-block;
+    padding: 0.3em 0.6em;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.9em;
+    text-transform: capitalize;
+}
+
+.water {
+    background-color: #1e90ff; /* Dodger Blue */
+}
+
+.electric {
+    background-color: rgb(255, 255, 0); /* Amarillo eléctrico */
+    color: #333;
+}
+
+.fire {
+    background-color: #ff6347; /* Tomato */
+}
+
+/* Estadísticas */
+.stats {
+    display: block;
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+/* Selectores avanzados */
+.pokemon:nth-child(odd) {
+    background-color: #fafafa; /* Blanco grisáceo */
+}
+
+.pokemon:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Pseudoclases */
+.pokemon:active {
+    background-color: #ffcccb; /* Misty Rose */
+    border-color: #ff4500; /* Orange Red */
+}
