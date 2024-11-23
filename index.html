@@ -4,38 +4,276 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex Básica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header id="main-header">
-        <h1 class="title">Pokedex Básica</h1>
+        <img class="header-icon" src="images/pokeball_icon.png" alt="Pokeball">
+        <h1 class="title">Pokédex</h1>
+        <img class="header-icon" src="images/pokeball_icon.png" alt="Pokeball">
     </header>
-    <main class="pokedex">
-        <!-- Pokémon más débil -->
-        <section class="pokemon" id="magikarp">
-            <h2 class="pokemon-name">Magikarp</h2>
-            <div class="pokemon-details">
-                <p class="type water">Agua</p>
-                <p class="stats">Ataque: 10, Defensa: 55</p>
-            </div>
-        </section>
 
-        <!-- Pokémon intermedio -->
-        <section class="pokemon" id="pikachu">
-            <h2 class="pokemon-name">Pikachu</h2>
-            <div class="pokemon-details">
-                <p class="type electric">Eléctrico</p>
-                <p class="stats">Ataque: 55, Defensa: 40</p>
-            </div>
-        </section>
+    <main>
+        <!-- Pokedex principal -->
+        <section class="pokedex">
+            <article class="pokemon">
+                <h2 class="pokemon-name">Pikachu</h2>
+                <img src="images/pikachu.png" alt="Pikachu" class="pokemon-image">
+                <span class="type electric">Eléctrico</span>
+                <div class="stats">
+                    <h3>Estadísticas</h3>
+                    <p>HP: 35</p>
+                    <p>Ataque: 55</p>
+                    <p>Defensa: 40</p>
+                    <p>Ataque Especial: 50</p>
+                    <p>Defensa Especial: 50</p>
+                    <p>Velocidad: 90</p>
+                </div>
+                <!-- Evoluciones -->
+                <section class="evolutions">
+                    <h3>Evoluciones</h3>
+                    <div class="evolution-line">
+                        <div class="evolution-stage">
+                            <img src="images/pichu.png" alt="Pichu">
+                            <p>Pichu</p>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div class="evolution-stage">
+                            <img src="images/pikachu.png" alt="Pikachu">
+                            <p>Pikachu</p>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div class="evolution-stage">
+                            <img src="images/raichu.png" alt="Raichu">
+                            <p>Raichu</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Movimientos -->
+                <section class="moves">
+                    <h3>Movimientos</h3>
+                    <ul>
+                        <li>Impactrueno</li>
+                        <li>Rayo</li>
+                        <li>Cola férrea</li>
+                        <li>Trueno</li>
+                    </ul>
+                </section>
+            </article>
+            <article class="pokemon">
+                <h2 class="pokemon-name">Charizard</h2>
+                <img src="images/charizard.png" alt="Charizard" class="pokemon-image">
+                <span class="type fire">Fuego</span>
+                <span class="type flying">Volador</span>
+                <div class="stats">
+                    <h3>Estadísticas</h3>
+                    <p>HP: 78</p>
+                    <p>Ataque: 84</p>
+                    <p>Defensa: 78</p>
+                    <p>Ataque Especial: 109</p>
+                    <p>Defensa Especial: 85</p>
+                    <p>Velocidad: 100</p>
+                </div>
+                <section class="evolutions">
+                    <h3>Evoluciones</h3>
+                    <div class="evolution-line">
+                        <div class="evolution-stage">
+                            <img src="images/charmander.png" alt="Charmander">
+                            <p>Charmander</p>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div class="evolution-stage">
+                            <img src="images/charmeleon.png" alt="Charmeleon">
+                            <p>Charmeleon</p>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div class="evolution-stage">
+                            <img src="images/charizard.png" alt="Charizard">
+                            <p>Charizard</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="moves">
+                    <h3>Movimientos</h3>
+                    <ul>
+                        <li>Llamarada</li>
+                        <li>Garra Dragón</li>
+                        <li>Ataque Ala</li>
+                        <li>Terremoto</li>
+                    </ul>
+                </section>
+            </article>
 
-        <!-- Pokémon más fuerte -->
-        <section class="pokemon" id="charizard">
-            <h2 class="pokemon-name">Charizard</h2>
-            <div class="pokemon-details">
-                <p class="type fire">Fuego</p>
-                <p class="stats">Ataque: 84, Defensa: 78</p>
-            </div>
+            <article class="pokemon">
+                <h2 class="pokemon-name">Bulbasaur</h2>
+                <img src="images/bulbasaur.png" alt="Bulbasaur" class="pokemon-image">
+                <span class="type grass">Planta</span>
+                <span class="type poison">Veneno</span>
+                <div class="stats">
+                    <h3>Estadísticas</h3>
+                    <p>HP: 45</p>
+                    <p>Ataque: 49</p>
+                    <p>Defensa: 49</p>
+                    <p>Ataque Especial: 65</p>
+                    <p>Defensa Especial: 65</p>
+                    <p>Velocidad: 45</p>
+                </div>
+                <section class="evolutions">
+                    <h3>Evoluciones</h3>
+                    <div class="evolution-line">
+                        <div class="evolution-stage">
+                            <img src="images/bulbasaur.png" alt="Bulbasaur">
+                            <p>Bulbasaur</p>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div class="evolution-stage">
+                            <img src="images/ivysaur.png" alt="Ivysaur">
+                            <p>Ivysaur</p>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div class="evolution-stage">
+                            <img src="images/venusaur.png" alt="Venusaur">
+                            <p>Venusaur</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="moves">
+                    <h3>Movimientos</h3>
+                    <ul>
+                        <li>Hoja Afilada</li>
+                        <li>Drenadoras</li>
+                        <li>Latigazo</li>
+                        <li>Rayo Solar</li>
+                    </ul>
+                </section>
+            </article>
+            <article class="pokemon">
+                <h2 class="pokemon-name">Gengar</h2>
+                <img src="images/gengar.png" alt="Gengar" class="pokemon-image">
+                <span class="type ghost">Fantasma</span>
+                <span class="type poison">Veneno</span>
+                <div class="stats">
+                    <h3>Estadísticas</h3>
+                    <p>HP: 60</p>
+                    <p>Ataque: 65</p>
+                    <p>Defensa: 60</p>
+                    <p>Ataque Especial: 130</p>
+                    <p>Defensa Especial: 75</p>
+                    <p>Velocidad: 110</p>
+                </div>
+                <section class="evolutions">
+                    <h3>Evoluciones</h3>
+                    <div class="evolution-line">
+                        <div class="evolution-stage">
+                            <img src="images/gastly.png" alt="Gastly">
+                            <p>Gastly</p>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div class="evolution-stage">
+                            <img src="images/haunter.png" alt="Haunter">
+                            <p>Haunter</p>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div class="evolution-stage">
+                            <img src="images/gengar.png" alt="Gengar">
+                            <p>Gengar</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="moves">
+                    <h3>Movimientos</h3>
+                    <ul>
+                        <li>Bola Sombra</li>
+                        <li>Puño Trueno</li>
+                        <li>Psíquico</li>
+                        <li>Hipnosis</li>
+                    </ul>
+                </section>
+            </article>
+            <article class="pokemon">
+                <h2 class="pokemon-name">Snorlax</h2>
+                <img src="images/snorlax.png" alt="Snorlax" class="pokemon-image">
+                <span class="type normal">Normal</span>
+                <div class="stats">
+                    <h3>Estadísticas</h3>
+                    <p>HP: 160</p>
+                    <p>Ataque: 110</p>
+                    <p>Defensa: 65</p>
+                    <p>Ataque Especial: 65</p>
+                    <p>Defensa Especial: 110</p>
+                    <p>Velocidad: 30</p>
+                </div>
+                <section class="evolutions">
+                    <h3>Evoluciones</h3>
+                    <div class="evolution-line">
+                        <div class="evolution-stage">
+                            <img src="images/munchlax.png" alt="Munchlax">
+                            <p>Munchlax</p>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div class="evolution-stage">
+                            <img src="images/snorlax.png" alt="Snorlax">
+                            <p>Snorlax</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="moves">
+                    <h3>Movimientos</h3>
+                    <ul>
+                        <li>Golpe Cuerpo</li>
+                        <li>Descanso</li>
+                        <li>Pulso Umbrío</li>
+                        <li>Tacleada</li>
+                    </ul>
+                </section>
+            </article>
+            <article class="pokemon">
+                <h2 class="pokemon-name">Togekiss</h2>
+                <img src="images/togekiss.png" alt="Togekiss" class="pokemon-image">
+                <span class="type fairy">Hada</span>
+                <span class="type flying">Volador</span>
+                <div class="stats">
+                    <h3>Estadísticas</h3>
+                    <p>HP: 160</p>
+                    <p>Ataque: 110</p>
+                    <p>Defensa: 65</p>
+                    <p>Ataque Especial: 65</p>
+                    <p>Defensa Especial: 110</p>
+                    <p>Velocidad: 30</p>
+                </div>
+                <section class="evolutions">
+                    <h3>Evoluciones</h3>
+                    <div class="evolution-line">
+                        <div class="evolution-stage">
+                            <img src="images/togepi.png" alt="Munchlax">
+                            <p>Togepi</p>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div class="evolution-stage">
+                            <img src="images/togetic.png" alt="Snorlax">
+                            <p>Togetic</p>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div class="evolution-stage">
+                            <img src="images/togekiss.png" alt="Snorlax">
+                            <p>Togekiss</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="moves">
+                    <h3>Movimientos</h3>
+                    <ul>
+                        <li>Tajo Aéreo</li>
+                        <li>Maquinación</li>
+                        <li>Brillo Mágico</li>
+                        <li>Esfera Aural</li>
+                    </ul>
+                </section>
+            </article>
+            <!-- Puedes agregar más Pokémon aquí -->
         </section>
     </main>
 </body>
