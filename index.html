@@ -8,13 +8,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');  // Cambia la visibilidad de los enlaces de navegación
+        }
+    </script>
 </head>
 <body>
-    <header id="main-header">
-        <img class="header-icon" src="images/pokeball_icon.png" alt="Pokeball">
-        <h1 class="title">Pokédex</h1>
-        <img class="header-icon" src="images/pokeball_icon.png" alt="Pokeball">
-    </header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="images/pokeball_icon.png" alt="Pokébola" class="pokeball">
+            <span class="title">Mi Pokédex</span>
+            <img src="images/pokeball_icon.png" alt="Pokébola" class="pokeball">
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        <ul class="nav-links">
+            <li><a href="#team">Mi Equipo</a></li>
+            <li><a href="#types">Tabla de Tipos</a></li>
+            <li><a href="#items">Objetos</a></li>
+            <li><a href="#extras">Extras</a></li>
+        </ul>
+        <div class="actions">
+            <button class="btn-login">Iniciar Sesión</button>
+        </div>
+    </nav>
 
     <main>
         <!-- Pokedex principal -->
@@ -56,10 +75,10 @@
                 <section class="moves">
                     <h3>Movimientos</h3>
                     <ul>
-                        <li>Impactrueno</li>
-                        <li>Rayo</li>
-                        <li>Cola férrea</li>
-                        <li>Trueno</li>
+                        <li class="electric">Impactrueno</li>
+                        <li class="electric">Rayo</li>
+                        <li class="steel">Cola férrea</li>
+                        <li class="normal">Ataque Rápido</li>
                     </ul>
                 </section>
             </article>
@@ -99,10 +118,10 @@
                 <section class="moves">
                     <h3>Movimientos</h3>
                     <ul>
-                        <li>Llamarada</li>
-                        <li>Garra Dragón</li>
-                        <li>Ataque Ala</li>
-                        <li>Terremoto</li>
+                        <li class="fire">Llamarada</li>
+                        <li class="dragon">Garra Dragón</li>
+                        <li class="flying">Ataque Ala</li>
+                        <li class="ground">Terremoto</li>
                     </ul>
                 </section>
             </article>
@@ -143,10 +162,10 @@
                 <section class="moves">
                     <h3>Movimientos</h3>
                     <ul>
-                        <li>Hoja Afilada</li>
-                        <li>Drenadoras</li>
-                        <li>Latigazo</li>
-                        <li>Rayo Solar</li>
+                        <li class="grass">Hoja Afilada</li>
+                        <li class="grass">Drenadoras</li>
+                        <li class="poison">Polvo Veneno</li>
+                        <li class="grass">Rayo Solar</li>
                     </ul>
                 </section>
             </article>
@@ -186,10 +205,10 @@
                 <section class="moves">
                     <h3>Movimientos</h3>
                     <ul>
-                        <li>Bola Sombra</li>
-                        <li>Puño Trueno</li>
-                        <li>Psíquico</li>
-                        <li>Hipnosis</li>
+                        <li class="ghost">Bola Sombra</li>
+                        <li class="electric">Puño Trueno</li>
+                        <li class="psychic">Psíquico</li>
+                        <li class="psychic">Hipnosis</li>
                     </ul>
                 </section>
             </article>
@@ -223,10 +242,10 @@
                 <section class="moves">
                     <h3>Movimientos</h3>
                     <ul>
-                        <li>Golpe Cuerpo</li>
-                        <li>Descanso</li>
-                        <li>Pulso Umbrío</li>
-                        <li>Tacleada</li>
+                        <li class="normal">Golpe Cuerpo</li>
+                        <li class="psychic">Descanso</li>
+                        <li class="dark">Triturar</li>
+                        <li class="normal">Tambor</li>
                     </ul>
                 </section>
             </article>
@@ -266,10 +285,10 @@
                 <section class="moves">
                     <h3>Movimientos</h3>
                     <ul>
-                        <li>Tajo Aéreo</li>
-                        <li>Maquinación</li>
-                        <li>Brillo Mágico</li>
-                        <li>Esfera Aural</li>
+                        <li class="flying">Tajo Aéreo</li>
+                        <li class="dark">Maquinación</li>
+                        <li class="fairy">Brillo Mágico</li>
+                        <li class="fighting">Esfera Aural</li>
                     </ul>
                 </section>
             </article>
