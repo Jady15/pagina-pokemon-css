@@ -1,0 +1,105 @@
+/* General */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #30A7D7;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+/* Main container */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Category section */
+.category {
+    margin-bottom: 40px;
+}
+
+.category h2 {
+    text-align: left;
+    color: #30A7D7;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #30A7D7;
+    padding-bottom: 5px;
+}
+
+/* Items container */
+.items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Responsive */
+    justify-content: center;
+}
+
+/* Individual item */
+.item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    flex: 1 1 calc(25% - 20px); /* 4 items por fila en pantallas grandes */
+    max-width: 250px;
+    position: relative; /* Para ajustar elementos internamente */
+}
+
+.item img {
+    width: 30%;
+    height: auto;
+}
+
+.item h3 {
+    background-color: #FFDD57;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.item p {
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Hover effect */
+.item:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .item {
+        flex: 1 1 calc(50% - 20px); /* 2 items por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        flex: 1 1 100%; /* 1 item por fila en pantallas pequeñas */
+    }
+
+    .header h1 {
+        font-size: 1.5em;
+    }
+}

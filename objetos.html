@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos - Mi Pokédex</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/objects.css">
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="images/pokeball_icon.png" alt="Pokébola" class="pokeball">
+            <span class="title">Mi Pokédex</span>
+            <img src="images/pokeball_icon.png" alt="Pokébola" class="pokeball">
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Mi Equipo</a></li>
+            <li><a href="#">Tabla de Tipos</a></li>
+            <li><a href="objetos.html">Objetos</a></li>
+            <li><a href="#extras">Extras</a></li>
+        </ul>
+        <div class="actions">
+            <button class="btn-login">Iniciar Sesión</button>
+        </div>
+    </nav>
+    <main class="container">
+        <!-- Bayas -->
+        <section class="category">
+            <h2>Bayas</h2>
+            <div class="items">
+                <div class="item">
+                    <img src="images/baya_zanama.png" alt="Baya Zanama">
+                    <h3>Baya Zanama</h3>
+                    <p>Restaura al portador 10 PP del primer movimiento cuyos PP bajen a 0.</p>
+                </div>
+                <div class="item">
+                    <img src="images/baya_aranja.png" alt="Baya Aranja">
+                    <h3>Baya Aranja</h3>
+                    <p>Restaura 10 PS del portador cuando estos se reducen a la mitad o menos.</p>
+                </div>
+                <div class="item">
+                    <img src="images/baya_zidra.png" alt="Baya Zidra">
+                    <h3>Baya Zidra</h3>
+                    <p>Restaura 1/4 PS del portador, activándose cuando estos caen por debajo del 50%</p>
+                </div>
+                <div class="item">
+                    <img src="images/baya_wiki.png" alt="Baya Wiki">
+                    <h3>Baya Wiki</h3>
+                    <p>Restaura el 33,3% de los PS máximos del portador cuando estos se reducen al 25% o menos. Confunde a aquellos Pokémon con naturalezas desfavorables en <b>Ataque Especial</b></p>
+                </div>
+                <div class="item">
+                    <img src="images/baya_ango.png" alt="Baya Ango">
+                    <h3>Baya Meloc</h3>
+                    <p>Restaura el 33,3% de los PS máximos del portador cuando estos se reducen al 25% o menos. Confunde a aquellos Pokémon con naturalezas desfavorables en <b>Velocidad</b></p>
+                </div>
+                <div class="item">
+                    <img src="images/baya_guaya.png" alt="Baya Guaya">
+                    <h3>Baya Guaya</h3>
+                    <p>Restaura el 33,3% de los PS máximos del portador cuando estos se reducen al 25% o menos. Confunde a aquellos Pokémon con naturalezas desfavorables en <b>Defensa Especial</b></p>
+                </div>
+                <div class="item">
+                    <img src="images/baya_pabaya.png" alt="Baya Pabaya">
+                    <h3>Baya Pabaya</h3>
+                    <p>Restaura el 33,3% de los PS máximos del portador cuando estos se reducen al 25% o menos. Confunde a aquellos Pokémon con naturalezas desfavorables en <b>Defensa</b></p>
+                </div>
+                <div class="item">
+                    <img src="images/baya_higog.png" alt="Baya Higog">
+                    <h3>Baya Higog</h3>
+                    <p>Restaura el 33,3% de los PS máximos del portador cuando estos se reducen al 25% o menos. Confunde a aquellos Pokémon con naturalezas desfavorables en <b>Ataque</b></p>
+                </div>
+                <div class="item">
+                    <img src="images/baya_zreza.png" alt="Baya Zreza">
+                    <h3>Baya Zreza</h3>
+                    <p>Si está equipado en un Pokémon, cura la parálisis del portador si este es paralizado.</p>
+                </div>
+                <div class="item">
+                    <img src="images/baya_meloc.png" alt="Baya Meloc">
+                    <h3>Baya Meloc</h3>
+                    <p>Si está equipado en un Pokémon, lo cura de estar Envenenado si su portador esta envenenado.</p>
+                </div>
+                <div class="item">
+                    <img src="images/baya_safre.png" alt="Baya Safre">
+                    <h3>Baya Safre</h3>
+                    <p>Si está equipado en un Pokémon, lo cura de estar quemado si su portador esta quemado.</p>
+                </div>
+                <div class="item">
+                    <img src="images/baya_atania.png" alt="Baya Atania">
+                    <h3>Baya Atania</h3>
+                    <p>Si está equipado en un Pokémon, lo despierta de estar Dormido si el portador esta dormido.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Pokébolas -->
+        <section class="category">
+            <h2>Pokébolas</h2>
+            <div class="items">
+                <div class="item">
+                    <img src="images/pokeball.png" alt="Pokéball">
+                    <h3>Pokébola</h3>
+                    <p>Sirve para capturar Pokémon. Se puede considerar como la ball más común de todas</p>
+                </div>
+                <div class="item">
+                    <img src="images/superball.png" alt="Super Ball">
+                    <h3>Super Ball</h3>
+                    <p>Sirve para capturar Pokémon, con un índice de éxito mayor que la Poké Ball, pero menos que la Ultra Ball.</p>
+                </div>
+                <div class="item">
+                    <img src="images/ultraball.png" alt="Ultra Ball">
+                    <h3>Ultra Ball</h3>
+                    <p>Si se usa con cualquier Pokémon, el multiplicador del ratio de captura es <b>×2</b>.</p>
+                </div>
+                <div class="item">
+                    <img src="images/masterball.png" alt="Master Ball">
+                    <h3>Master Ball</h3>
+                    <p>Sirve para capturar Pokémon, siendo la mejor ball de todas, ya que nunca falla.</p>
+                </div>
+                <div class="item">
+                    <img src="images/rapidball.png" alt="Rapid Ball">
+                    <h3>Rapid Ball</h3>
+                    <p>Sirve para capturar Pokémon que huyen con facilidad o con alta velocidad.</p>
+                </div>
+                <div class="item">
+                    <img src="images/pesoball.png" alt="Peso Ball">
+                    <h3>Peso Ball</h3>
+                    <p>Es un tipo de Poké Ball especial que facilita la captura de Pokémon muy pesados.</p>
+                </div>
+                <div class="item">
+                    <img src="images/ocasoball.png" alt="Ocaso Ball">
+                    <h3>Ocaso Ball</h3>
+                    <p>Si se usa en el interior de una cueva o en el exterior durante la noche, el multiplicador del ratio es <b>×3,5</b>.</p>
+                </div>
+                <div class="item">
+                    <img src="images/velozball.png" alt="Veloz Ball">
+                    <h3>Veloz Ball</h3>
+                    <p>Si se usa en el primer turno de un combate, el multiplicador del ratio es <b>×4</b>.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Medicinas -->
+        <section class="category">
+            <h2>Medicinas</h2>
+            <div class="items">
+                <div class="item">
+                    <img src="images/pocion.png" alt="Poción">
+                    <h3>Poción</h3>
+                    <p>Restaura 20 PS al Pokémon con el que se use.</p>
+                </div>
+                <div class="item">
+                    <img src="images/superpocion.png" alt="Superpoción">
+                    <h3>Superpoción</h3>
+                    <p>Restaura 60 PS al Pokémon con el que se use.</p>
+                </div>
+                <div class="item">
+                    <img src="images/hiperpocion.png" alt="Hiperpoción">
+                    <h3>Hiperpoción</h3>
+                    <p>Restaura 120 PS al Pokémon con el que se use.</p>
+                </div>
+                <div class="item">
+                    <img src="images/antidoto.png" alt="Antídoto">
+                    <h3>Antídoto</h3>
+                    <p>Cura el problema de estado <b>envenenado</b> de un Pokémon.</p>
+                </div>
+                <div class="item">
+                    <img src="images/antiparalizador.png" alt="Antiparalizador">
+                    <h3>Antiparalizador</h3>
+                    <p>Cura el problema de estado <b>paralizado</b> de un Pokémon.</p>
+                </div>
+                <div class="item">
+                    <img src="images/antiquemar.png" alt="Antiquemar">
+                    <h3>Antiquemar</h3>
+                    <p>Cura el problema de estado <b>quemado</b> de un Pokémon.</p>
+                </div>
+                <div class="item">
+                    <img src="images/antihielo.png" alt="Antihielo">
+                    <h3>Antihielo</h3>
+                    <p>Cura el problema de estado <b>congelamiento</b> de un Pokémon.</p>
+                </div>
+                <div class="item">
+                    <img src="images/despertar.png" alt="Despertar">
+                    <h3>Despertar</h3>
+                    <p>Cura el problema de estado <b>dormido</b> de un Pokémon.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Objetos Competitivos -->
+        <section class="category">
+            <h2>Objetos Competitivos</h2>
+            <div class="items">
+                <div class="item">
+                    <img src="images/restos.png" alt="Restos">
+                    <h3>Restos</h3>
+                    <p>Regenera PS del Pokémon al final de cada turno.</p>
+                </div>
+                <div class="item">
+                    <img src="images/banda_aguante.png" alt="Banda Aguante">
+                    <h3>Banda Focus</h3>
+                    <p>Evita que el Pokémon sea debilitado de un solo golpe si tiene sus PS completos.</p>
+                </div>
+                <div class="item">
+                    <img src="images/vidasfera.png" alt="Vidasfera">
+                    <h3>Vidasfera</h3>
+                    <p>Aumenta en un <b>30%</b> el daño de los movimientos del poseedor. A cambio, el portador perderá un <b>10%</b> de sus PS máximos cada vez que use un movimiento de daño.</p>
+                </div>
+                <div class="item">
+                    <img src="images/panuelo_eleccion.png" alt="Pañuelo elección">
+                    <h3>Pañuelo Elección</h3>
+                    <p>Al estar equipado en un Pokémon, aumenta su <b>velocidad</b> en un <b>50%</b>. A cambio, el portador se verá forzado a solo poder utilizar un único movimiento.</p>
+                </div>
+                <div class="item">
+                    <img src="images/cinta_eleccion.png" alt="Cinta elección">
+                    <h3>Cinta elección</h3>
+                    <p>Al estar equipado en un Pokémon, aumenta su <b>ataque</b> en un <b>50%</b>. A cambio, el portador se verá forzado a solo poder utilizar un único movimiento.</p>
+                </div>
+                <div class="item">
+                    <img src="images/gafas_eleccion.png" alt="Gafas elección">
+                    <h3>Gafas elección</h3>
+                    <p>Al estar equipado en un Pokémon, aumentan su <b>ataque especial</b> en un <b>50%</b>. A cambio, el portador se verá forzado a solo poder utilizar un único movimiento.</p>
+                </div>
+                <div class="item">
+                    <img src="images/chaleco_asalto.png" alt="Chaleco asalto">
+                    <h3>Chaleco asalto</h3>
+                    <p>Al estar equipado en un Pokémon, aumenta su <b>defensa especial</b> en un <b>50%</b>, pero no le permite seleccionar movimiento de categoría <b>estado</b>.</p>
+                </div>
+                <div class="item">
+                    <img src="images/mineral_evolutivo.png" alt="Mineral Evolutivo">
+                    <h3>Mineral Evolutivo</h3>
+                    <p>Si un Pokémon que aún puede evolucionar lo lleva equipado, aumenta su <b>defensa</b> y <b>defensa especial</b> en un <b>50%</b> cada una</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
