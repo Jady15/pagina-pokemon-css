@@ -87,6 +87,108 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+.menu-toggle{
+    display: none;
+}
+
+@media (max-width: 930px) {
+    .navbar {
+        padding: 10px 5%; /* Ajuste de padding para pantallas pequeñas */
+        flex-direction: column; /* Apila los elementos de la navbar */
+        align-items: center; /* Centra los elementos en la pantalla */
+    }
+
+    /* Logo */
+    .logo {
+        display: flex;
+        justify-content: center; /* Centra el logo */
+        margin-bottom: 10px; /* Espacio debajo del logo */
+    }
+
+    .logo .pokeball {
+        width: 25px; /* Ajusta el tamaño del logo */
+        height: auto;
+        margin-right: 8px; /* Espacio entre la pokeball y el título */
+    }
+
+    .logo .title {
+        font-size: 1.2em; /* Reduce el tamaño del texto */
+    }
+
+    /* Enlaces de navegación */
+    .nav-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none; /* Oculta los enlaces de forma predeterminada */
+        flex-direction: column; /* Los enlaces estarán en columna */
+        align-items: center; /* Centra los enlaces */
+        width: 100%; /* Asegura que los enlaces ocupen toda la pantalla */
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Espacio entre los enlaces */
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: #FFDD57;
+    }
+
+    /* Botón de inicio de sesión */
+    .actions {
+        display: flex;
+        justify-content: center; /* Centra el botón de inicio de sesión */
+        margin-top: 10px; /* Espacio superior */
+        width: 100%; /* Asegura que el botón ocupe toda la pantalla */
+    }
+
+    .btn-login {
+        background-color: #FFDD57;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 5px;
+        color: #3B4CCA;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s;
+        width: 50%; /* El botón ocupará el 80% del ancho de la pantalla */
+        text-align: center;
+    }
+
+    .btn-login:hover {
+        background-color: #FFC107;
+    }
+
+    /* Botón de menú hamburguesa */
+    .menu-toggle {
+        display: block; /* Muestra el botón de menú hamburguesa en pantallas pequeñas */
+        background-color: #30A7D7;
+        border: none;
+        color: white;
+        font-size: 1.5em;
+        padding: 10px;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    /* Mostrar el menú cuando se haga clic en el menú hamburguesa */
+    .nav-links.active {
+        display: flex; /* Muestra los enlaces de navegación cuando se activa */
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .item {
