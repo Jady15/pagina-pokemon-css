@@ -23,7 +23,9 @@ body {
     color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-bottom: 10px solid #2980EF;
-    position: relative;
+    position: sticky;
+    top: 0; /* Se pega en la parte superior cuando llegamos a esa posición */
+    z-index: 1000; /* Asegura que se mantenga sobre el contenido */
 }
 
 /* Logo */

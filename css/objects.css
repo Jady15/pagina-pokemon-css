@@ -8,20 +8,11 @@ body {
     color: #333;
 }
 
-/* Header */
-.header {
-    background-color: #30A7D7;
-    color: white;
-    text-align: center;
-    padding: 20px 10px;
-    position: relative;
-}
+.navbar {
 
-.header h1 {
-    margin: 0;
-    font-size: 2em;
-    text-transform: uppercase;
-}
+
+  
+  }
 
 /* Main container */
 .container {
