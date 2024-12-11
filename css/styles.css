@@ -13,6 +13,10 @@ body {
     color: #333;
     box-sizing: border-box;
 }
+
+main {
+    margin-bottom: 75px;
+}
 /* General */
 .navbar {
     display: flex;
@@ -517,4 +521,78 @@ body {
     padding: 5px;
     border-radius: 4px;
     border: 1px solid #ddd;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0C2647;
+    color: #fff;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+}
+
+/* Secciones del footer */
+.footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden; /* Evita desbordamientos */
+}
+
+/* Redes sociales */
+.social-icons a {
+    margin: 0 8px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Enlaces */
+.footer a {
+    color: #2980EF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Foto del perfil */
+.profile-photo img {
+    width: 24px; /* Ajusta el tamaño de la imagen */
+    height: 24px; /* Asegura un tamaño cuadrado */
+    border-radius: 50%; /* Hace la imagen circular */
+    margin-left: 8px; /* Espaciado entre el texto y la foto */
+    vertical-align: middle; /* Alinea la imagen con el texto */
+    border: 2px solid #4CAF50; /* Borde decorativo */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+}
+
+.github-footer {
+    display: inline-flex;
+    align-items: center; /* Alinea texto e imagen en el centro */
+    text-decoration: none;
+}
+
+.github-footer:hover .profile-photo img {
+    transform: scale(1.1); /* Amplía ligeramente al pasar el cursor */
+    transition: transform 0.3s ease;
 }
