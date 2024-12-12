@@ -610,9 +610,9 @@ main {
 @media (max-width: 768px) {
     .footer {
         position: static;
-        flex-direction: column; /* Acomoda las secciones en una columna */
-        text-align: center; /* Centra el contenido */
-        height: auto; /* Ajusta la altura según el contenido */
+        flex-direction: column;
+        text-align: center; /
+        height: auto; 
     }
 
     .footer-section {
@@ -621,11 +621,11 @@ main {
     }
 
     .social-icons {
-        margin-top: 5px; /* Espaciado extra para los íconos */
+        margin-top: 5px; 
     }
 
     .social-icons a {
-        margin: 0 5px; /* Espaciado reducido entre íconos */
+        margin: 0 5px; 
     }
 
     .social-icons img {
