@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    color: #333;
 }
 
 /* Estilo general */
@@ -535,22 +534,30 @@ main {
     color: #fff;
     padding: 0 1em;
     display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente */
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: auto; /* Ajusta automáticamente la altura si las secciones se apilan */
     font-family: Arial, sans-serif;
     font-size: 0.9em;
+    text-align: center; /* Centra el texto por defecto */
 }
 
 /* Secciones del footer */
 .footer-section {
+    flex: 1 1 30%; /* Cada sección ocupa al menos 30% del ancho disponible */
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center; /* Centra las secciones horizontalmente */
     overflow: hidden; /* Evita desbordamientos */
+    margin: 10px 0; /* Espaciado entre las filas en pantallas pequeñas */
 }
 
 /* Redes sociales */
+.social-icons {
+    justify-content: center; /* Centra los íconos dentro de su sección */
+}
+
 .social-icons a {
     margin: 0 8px;
     display: inline-block;
@@ -598,3 +605,33 @@ main {
     transform: scale(1.1); /* Amplía ligeramente al pasar el cursor */
     transition: transform 0.3s ease;
 }
+
+/* Responsivo: Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer {
+        position: static;
+        flex-direction: column; /* Acomoda las secciones en una columna */
+        text-align: center; /* Centra el contenido */
+        height: auto; /* Ajusta la altura según el contenido */
+    }
+
+    .footer-section {
+        flex: 1 1 100%; /* Cada sección ocupa el ancho completo */
+        margin-bottom: 5px; /* Espaciado entre secciones */
+    }
+
+    .social-icons {
+        margin-top: 5px; /* Espaciado extra para los íconos */
+    }
+
+    .social-icons a {
+        margin: 0 5px; /* Espaciado reducido entre íconos */
+    }
+
+    .social-icons img {
+        width: 24px; /* Tamaño ligeramente mayor en pantallas pequeñas */
+        height: 24px;
+    }
+}
+
+
