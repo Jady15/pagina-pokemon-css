@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex Básica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/types.css">
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');  // Cambia la visibilidad de los enlaces de navegación
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="images/pokeball_icon.png" alt="Pokébola" class="pokeball">
+            <span class="title">Mi Pokédex</span>
+            <img src="images/pokeball_icon.png" alt="Pokébola" class="pokeball">
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Mi Equipo</a></li>
+            <li><a href="tabla-tipos.html">Tabla de Tipos</a></li>
+            <li><a href="objetos.html">Objetos</a></li>
+            <li><a href="#extras">Extras</a></li>
+        </ul>
+        <div class="actions">
+            <button class="btn-login">Iniciar Sesión</button>
+        </div>
+    </nav>
+    <main>
+        <h1>Fortalezas y debilidades de los tipos elementales</h1>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/steel-icon.png" alt="Tipo Acero" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Acero</h2>
+                    <p class="type-description">Breve descripción del tipo Acero.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <div class="damage-icons">
+                            <p>No disponible</p>
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/electric-icon.png" alt="Steel" class="damage-icon">
+                            <img src="images/steel-icon.png" alt="Steel" class="damage-icon">
+                            <img src="images/water-icon.png" alt="Steel" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/bug-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Flying" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Flying" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Flying" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Flying" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Flying" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Flying" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Flying" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Flying" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Flying" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Flying" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/fairy-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Flying" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <div class="damage-icons">
+                            <img src="images/poison-icon.png" alt="Rock" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/water-icon.png" alt="Tipo Agua" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Agua</h2>
+                    <p class="type-description">Breve descripción del tipo Agua.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <div class="damage-icons">
+                            <p>No disponible</p>
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Flying" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/bug-icon.png" alt="Tipo Bicho" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Bicho</h2>
+                    <p class="type-description">Breve descripción del tipo Bicho.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <div class="damage-icons">
+                            <p>No disponible</p>
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/dragon-icon.png" alt="Tipo Dragón" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Dragón</h2>
+                    <p class="type-description">Breve descripción del tipo Dragón.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <div class="damage-icons">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/electric-icon.png" alt="Tipo Eléctrico" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Eléctrico</h2>
+                    <p class="type-description">Breve descripción del tipo Eléctrico.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <div class="damage-icons">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/ghost-icon.png" alt="Tipo Fantasma" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Fantasma</h2>
+                    <p class="type-description">Breve descripción del tipo Fantasma.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <div class="damage-icons">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                        <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/fire-icon.png" alt="Tipo Fuego" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Fuego</h2>
+                    <p class="type-description">Breve descripción del tipo Fuego.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/fairy-icon.png" alt="Tipo Hada" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Hada</h2>
+                    <p class="type-description">Breve descripción del tipo Hada.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/ice-icon.png" alt="Tipo Hielo" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Hielo</h2>
+                    <p class="type-description">Breve descripción del tipo Hielo.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Planta" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/fighting-icon.png" alt="Tipo Lucha" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Lucha</h2>
+                    <p class="type-description">Breve descripción del tipo Lucha.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/normal-icon.png" alt="Tipo Normal" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Normal</h2>
+                    <p class="type-description">Breve descripción del tipo Normal.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <p>No disponible</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/grass-icon.png" alt="Tipo Planta" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Planta</h2>
+                    <p class="type-description">Breve descripción del tipo Planta.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                        <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                        <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                        <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                        <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/psychic-icon.png" alt="Tipo Psíquico" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Psíquico</h2>
+                    <p class="type-description">Breve descripción del tipo Psíquico.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                        <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                        <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/rock-icon.png" alt="Tipo Roca" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Roca</h2>
+                    <p class="type-description">Breve descripción del tipo Roca.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                        <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                        <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                        <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                        <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                        <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                        <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Lucha" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/dark-icon.png" alt="Tipo Siniestro" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Siniestro</h2>
+                    <p class="type-description">Breve descripción del tipo Siniestro.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                        <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                        <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/ground-icon.png" alt="Tipo Tierra" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Tierra</h2>
+                    <p class="type-description">Breve descripción del tipo Tierra.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                        <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                        <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                        <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                        <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                        <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/poison-icon.png" alt="Tipo Veneno" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Veneno</h2>
+                    <p class="type-description">Breve descripción del tipo Veneno.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                        <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                        <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                        <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                        <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                        <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+        <button class="accordion">
+            <div class="accordion-title">
+                <img src="images/flying-icon.png" alt="Tipo Volador" class="type-image">
+                <div class="type-info">
+                    <h2 class="type-name">Tipo Volador</h2>
+                    <p class="type-description">Breve descripción del tipo Volador.</p>
+                </div>
+            </div>
+        </button>
+        <div class="panel">
+            <!-- Tarjeta ofensiva -->
+            <div class="card">
+                <h3>Ofensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <p>No disponible</p>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                        <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                        <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta ofensiva -->
+             
+            <!-- Tarjeta defensiva -->
+            <div class="card">
+                <h3>Defensiva</h3>
+                <div class="damage-types">
+                    <div class="damage-category">
+                        <h4>x0</h4>
+                        <img src="images/ground-icon.png" alt="Tierra" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1/2</h4>
+                        <img src="images/bug-icon.png" alt="Bicho" class="damage-icon">
+                        <img src="images/fighting-icon.png" alt="Lucha" class="damage-icon">
+                        <img src="images/grass-icon.png" alt="Planta" class="damage-icon">
+                    </div>
+                    <div class="damage-category">
+                        <h4>x1</h4>
+                        <div class="damage-icons">
+                            <img src="images/steel-icon.png" alt="Acero" class="damage-icon">
+                            <img src="images/water-icon.png" alt="Agua" class="damage-icon">
+                            <img src="images/dragon-icon.png" alt="Dragón" class="damage-icon">
+                            <img src="images/ghost-icon.png" alt="Fantasma" class="damage-icon">
+                            <img src="images/fire-icon.png" alt="Fuego" class="damage-icon">
+                            <img src="images/fairy-icon.png" alt="Hada" class="damage-icon">
+                            <img src="images/normal-icon.png" alt="Normal" class="damage-icon">
+                            <img src="images/psychic-icon.png" alt="Psíquico" class="damage-icon">
+                            <img src="images/dark-icon.png" alt="Siniestro" class="damage-icon">
+                            <img src="images/poison-icon.png" alt="Veneno" class="damage-icon">
+                            <img src="images/flying-icon.png" alt="Volador" class="damage-icon">
+                        </div>
+                    </div>
+                    <div class="damage-category">
+                        <h4>x2</h4>
+                        <div class="damage-icons">
+                            <img src="images/electric-icon.png" alt="Eléctrico" class="damage-icon">
+                            <img src="images/ice-icon.png" alt="Hielo" class="damage-icon">
+                            <img src="images/rock-icon.png" alt="Roca" class="damage-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Tarjeta defensiva -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Derechos reservados -->
+        <div class="footer-section">
+            <p>&copy; 2024 Proyecto Devf Módulo 2</p>
+        </div>
+        
+        <!-- Redes sociales -->
+        <div class="footer-section social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <img src="images/facebook-logo.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                <img src="images/twitter-logo.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <img src="images/instagram-logo.png" alt="Instagram">
+            </a>
+        </div>
+
+        <!-- Autor -->
+        <div class="footer-section">
+            <p>
+                Creado por 
+                <a href="https://github.com/Jady15" target="_blank" class="github-footer">
+                    Jady15 
+                    <span class="profile-photo">
+                        <img src="images/profile.png" alt="Foto de perfil de Jady15">
+                    </span>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/types.js"></script>
+</body>
+</html>

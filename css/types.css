@@ -1,0 +1,133 @@
+main {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 75px;
+}
+
+main h1 {
+    margin: 15px 0;
+}
+
+
+.accordion {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    text-align: left;
+    outline: none;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.accordion:hover {
+    background-color: #f1f1f1;
+}
+
+.accordion-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+.type-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.type-info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: left;
+}
+
+.type-name {
+    margin: 0;
+    font-size: 18px;
+}
+
+.type-description {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.panel {
+    background: #ffffff;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 15px;
+}
+
+.panel p {
+    margin: 10px 0;
+}
+
+/* Tarjetas */
+.card {
+    background: #f4f4f4;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+/* Contenedor principal de las categorías de daño */
+.damage-types {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que las categorías se ajusten si el espacio es insuficiente */
+    gap: 30px;
+}
+
+/* Contenedor de cada categoría */
+.damage-category {
+    flex: 1; /* Permite que cada categoría ocupe el mismo ancho */
+    max-width: 150px; /* Ancho máximo para que no crezcan demasiado */
+    text-align: center;
+}
+
+/* Encabezado de cada categoría */
+.damage-category h4 {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+/* Íconos dentro de cada categoría */
+.damage-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para cada ícono */
+.damage-icon {
+    width: 40px;
+    height: 40px;
+}
