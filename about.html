@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Mi Pokédex</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="images/pokeball_icon.png" alt="Pokébola" class="pokeball">
+                <span class="title">Mi Pokédex</span>
+                <img src="images/pokeball_icon.png" alt="Pokébola" class="pokeball">
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Mi Equipo</a></li>
+                <li><a href="tabla-tipos.html">Tabla de Tipos</a></li>
+                <li><a href="objetos.html">Objetos</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="actions">
+                <button class="btn-login">Iniciar Sesión</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <!-- Banner de presentación -->
+            <div class="banner">
+                <div class="banner-overlay"></div>
+                <div class="banner-content">
+                    <h1>Bienvenido a la Enciclopedia Pokémon</h1>
+                    <p>Explora información sobre algunos Pokémon, diversos objetos y la tabla de tipos.</p>
+                </div>
+            </div>
+        
+            <!-- Sección de información -->
+            <div class="info-cards">
+                <h2>¿Qué encontrarás aquí?</h2>
+                <div class="cards-container">
+                    <div class="info-card">
+                        <img src="images/combate.png" alt="Ícono de combate">
+                        <h3>Estructura de un Equipo</h3>
+                        <p>Aprende la información básica sobre cómo se construye un equipo Pokémon, junto a sus estadísticas y algunos movimientos principales.</p>
+                        <a href="index.html"><button>Ver más</button></a>
+                    </div>
+                    <div class="info-card">
+                        <img src="images/masterball-draw.png" alt="Masterball">
+                        <h3>Objetos</h3>
+                        <p>Explora algunos objetos importantes, como bayas, medicinas, pokebolas y otras variedades útiles.</p>
+                        <a href="objetos.html"><button>Ver más</button></a>
+                    </div>
+                    <div class="info-card">
+                        <img src="images/relacion-tipos.png" alt="Relación básica de tipos">
+                        <h3>Tabla de tipos</h3>
+                        <p>Familiarízate con la tabla de tipos, aprendiendo las fortalezas y debilidades de cada tipo elemental a la hora de atacar y defender.</p>
+                        <a href="tabla-tipos.html"><button>Ver más</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="about-grid">
+                <div class="about-heading">
+                  <h2>Fundamentos y Curiosidades de Pokémon</h2>
+                  <p>Explora el fascinante mundo de Pokémon: sus bases y hechos interesantes.</p>
+                </div>
+                <div class="grid-container">
+                  <!-- Fundamentos -->
+                  <div class="grid-item fundamentos">
+                    <h3>Fundamentos de Pokémon</h3>
+                    <ul>
+                      <li>Pokémon son criaturas que los humanos entrenan para combates amistosos.</li>
+                      <li>Existen más de 1,000 especies de Pokémon.</li>
+                      <li>Cada Pokémon pertenece a uno o más de 18 tipos, como Fuego, Agua, y Eléctrico.</li>
+                      <li>Las batallas de Pokémon se basan en estrategias y ventajas de tipo.</li>
+                    </ul>
+                  </div>
+                  <!-- Curiosidades -->
+                  <div class="grid-item curiosidades">
+                    <h3>Curiosidades de Pokémon</h3>
+                    <ul>
+                      <li>Pikachu, la mascota oficial, originalmente no iba a ser el símbolo de Pokémon.</li>
+                      <li>El juego original de Pokémon Rojo y Azul se lanzó en 1996 en Japón.</li>
+                      <li>Un jugador logró completar Pokémon usando únicamente comandos de voz.</li>
+                      <li>Hay un Pokémon inspirado en un bolso de té llamado Polteageist.</li>
+                    </ul>
+                  </div>
+                </div>
+            </section>
+        
+            <!-- Formulario de contacto -->
+            <div class="contact-form">
+                <h2>Contáctanos</h2>
+                <form action="#" method="POST">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+        
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo" required>
+        
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Derechos reservados -->
+        <div class="footer-section">
+            <p>&copy; 2024 Proyecto Devf Módulo 2</p>
+        </div>
+        
+        <!-- Redes sociales -->
+        <div class="footer-section social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <img src="images/facebook-logo.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                <img src="images/twitter-logo.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <img src="images/instagram-logo.png" alt="Instagram">
+            </a>
+        </div>
+
+        <!-- Autor -->
+        <div class="footer-section">
+            <p>
+                Creado por 
+                <a href="https://github.com/Jady15" target="_blank" class="github-footer">
+                    Jady15 
+                    <span class="profile-photo">
+                        <img src="images/profile.png" alt="Foto de perfil de Jady15">
+                    </span>
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
