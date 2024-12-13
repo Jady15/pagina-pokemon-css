@@ -33,19 +33,19 @@
 /* Animación únicamente para cambiar las imágenes */
 @keyframes BgAnimation {
     0% {
-        background-image: url('/images/banner-1.jpg');
+        background-image: url('../images/banner-1.jpg');
     }
     25% {
-        background-image: url('/images/banner-2.jpg');
+        background-image: url('../images/banner-2.jpg');
     }
     50% {
-        background-image: url('/images/banner-3.jpg');
+        background-image: url('../images/banner-3.jpg');
     }
     75% {
-        background-image: url('/images/banner-4.jpg');
+        background-image: url('../images/banner-4.jpg');
     }
     100% {
-        background-image: url('/images/banner-1.jpg');
+        background-image: url('../images/banner-1.jpg');
     }
 }
 
